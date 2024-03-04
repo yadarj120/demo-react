@@ -1,6 +1,6 @@
 trigger:
   - main
-pool: MyPool
+pool: "Azure Pipelines"
 steps:
   - task: NodeTool@0
     inputs:
