@@ -13,9 +13,11 @@ steps:
 
   - script: |
       npm install
-      cat package.json
+    displayName: "Install dependencies"
+
+  - script: |
       npm run build
-    displayName: "Install dependencies and build"
+    displayName: "BUILD"
 
   - task: ArchiveFiles@2
     inputs:
