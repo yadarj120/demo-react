@@ -24,5 +24,5 @@ steps:
       rootFolderOrFile: "$(System.DefaultWorkingDirectory)/build"
       includeRootFolder: false
       archiveType: "zip"
-      archiveFile: "$(Build.ArtifactStagingDirectory)/build.zip"
+      archiveFile: "$(System.DefaultWorkingDirectory)/../../r1/a/build.zip"
       replaceExistingArchive: true
