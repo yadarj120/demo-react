@@ -8,13 +8,14 @@ pool: Default
 steps:
 - task: NodeTool@0
   inputs:
-    versionSpec: '14.x'
+    versionSpec: '20.x'
   displayName: 'Install Node.js'
 
 - script: |
     npm install
     npm run build
   displayName: 'Install dependencies and build'
+  
 
 - task: ArchiveFiles@2
   inputs:
